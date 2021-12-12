@@ -1,0 +1,383 @@
+{
+  "info": {
+    "_postman_id": "9dcda4b2-e00f-487f-b40a-f420fe139a8f",
+    "name": "Temperature Dockerized Web API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "test 1",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/36/c/to/f returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/36/c/to/f returns a result of 96.8\",()=>{\r",
+              "    pm.expect(response.result).to.eql(96.8);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/36/c/to/f",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "36", "c", "to", "f"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/80/f/to/c returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/80/f/to/c returns a result of 26.7\",()=>{\r",
+              "    pm.expect(response.result).to.eql(26.7);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/80/f/to/c",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "80", "f", "to", "c"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 3",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/40/c/to/k returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/40/c/to/k returns a result of 313.2\",()=>{\r",
+              "    pm.expect(response.result).to.eql(313.2);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/40/c/to/k",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "40", "c", "to", "k"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 4",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/300/k/to/c returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/300/k/to/c returns a result of 26.9\",()=>{\r",
+              "    pm.expect(response.result).to.eql(26.9);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/300/k/to/c",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "300", "k", "to", "c"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 5",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/95/f/to/k returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/95/f/to/k returns a result of 308.2\",()=>{\r",
+              "    pm.expect(response.result).to.eql(308.2);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/95/f/to/k",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "95", "f", "to", "k"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 6",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/95/f/to/k returns a 200 http code\",()=>{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/95/f/to/k returns a result of 170.3\",()=>{\r",
+              "    pm.expect(response.result).to.eql(170.3);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/350/k/to/f",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "350", "k", "to", "f"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 7",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/ap/95/f/to/k returns a 400 http code\",()=>{\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/ap/95/f/to/k returns an error syntax\",()=>{\r",
+              "    pm.expect(response).to.eql(\"Syntax error. The url structure must be http://localhost:8000/api/{number}/{start-scale}/to/{final-scale}\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/ap/350/k/to/f",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["ap", "350", "k", "to", "f"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 8",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/a/k/to/f returns a 400 http code\",()=>{\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/a/k/to/f returns an error syntax\",()=>{\r",
+              "    pm.expect(response).to.eql(\"number parameter is not of type number\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/a/k/to/f",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "a", "k", "to", "f"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 9",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/30/wdsdsf/to/f returns a 400 http code\",()=>{\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/30/wdsdsf/to/f returns an error syntax\",()=>{\r",
+              "    pm.expect(response).to.eql(\"Start scale parameter must be c, f or k\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/30/wdsdsf/to/f",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "30", "wdsdsf", "to", "f"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 10",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/30/c/to/efgf returns a 400 http code\",()=>{\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/30/c/to/efgf returns an error syntax\",()=>{\r",
+              "    pm.expect(response).to.eql(\"Final scale parameter must be c, f or k\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/30/c/to/efgf",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "30", "c", "to", "efgf"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test 11",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response=pm.response.json(); \r",
+              "\r",
+              "pm.test(\"Valiate that http://localhost:8000/api/30/c/to/c returns a 400 http code\",()=>{\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Validate that http://localhost:8000/api/30/c/to/c returns an error syntax\",()=>{\r",
+              "    pm.expect(response).to.eql(\"Cannot convert from one scale to the same one.\");\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/30/c/to/c",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "30", "c", "to", "c"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
